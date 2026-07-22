@@ -77,6 +77,7 @@
     // exposed for tests: overrideWaitMs — skip the random wait when >= 0
     var overrideWaitMs = -1;
     function reactionStart() {
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       clearTimers();
       state = "waiting";
       setStage("is-waiting", "Wait for green…", "Don't click yet.");
@@ -108,6 +109,7 @@
 
     // ---- click-speed --------------------------------------------------
     function clickStart() {
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       clearTimers();
       count = 0;
       state = "running";
@@ -133,6 +135,7 @@
 
     // ---- aim trainer --------------------------------------------------
     function aimStart() {
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       clearTimers();
       removeTarget();
       targetsDone = 0; sumMs = 0;
@@ -180,6 +183,7 @@
 
     // ---- spacebar -----------------------------------------------------
     function spaceStart() {
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       clearTimers();
       count = 0;
       state = "running";
