@@ -1,0 +1,118 @@
+{
+  "groups": [
+    { "id": "reflexes", "label": "Reflex tests" },
+    { "id": "click", "label": "Click speed tests" },
+    { "id": "aim", "label": "Aim tests" }
+  ],
+  "tests": [
+    {
+      "slug": "reaction-time-test",
+      "kind": "reaction",
+      "group": "reflexes",
+      "nav": "Reaction time",
+      "title": "Reaction Time Test",
+      "desc": "Free online reaction time test. Click when the screen turns green and see your reflexes in milliseconds. No signup, best score saved on your device.",
+      "blurb": "Click to start, wait for the screen to turn green, then click as fast as you can. Your reaction is measured in milliseconds using a high-resolution timer. Click too early and it counts as a miss — no cheating the wait.",
+      "tip": "Most people land between 200 and 300 ms. Take several goes and watch the number settle; your best time is stored in your browser so you can beat it later."
+    },
+    {
+      "slug": "spacebar-counter",
+      "kind": "spacebar",
+      "group": "reflexes",
+      "durationSec": 0,
+      "nav": "Spacebar counter",
+      "title": "Spacebar Counter",
+      "desc": "Count your spacebar presses online. Tap the spacebar and watch the running total climb — no time limit, best count saved on your device.",
+      "blurb": "A no-frills spacebar tally: press Start, then tap the spacebar and the counter climbs with every press. There's no timer, so it's handy for counting reps, votes, or anything you want to tick off with one key.",
+      "tip": "Want a timed challenge instead? Try the spacebar speed test, which counts your presses inside a fixed window and works out presses per second."
+    },
+    {
+      "slug": "spacebar-speed-test",
+      "kind": "spacebar",
+      "group": "reflexes",
+      "durationSec": 5,
+      "nav": "Spacebar speed",
+      "title": "Spacebar Speed Test",
+      "desc": "How fast can you tap the spacebar? Timed spacebar test that counts your presses and presses-per-second over a 5-second window. Free, no signup.",
+      "blurb": "Press Start and hammer the spacebar until the window closes. You get your total presses and your presses-per-second, timed with a high-resolution clock. Pick a 1, 5, or 10-second window from the control below.",
+      "tip": "Short windows reward a fast burst; longer windows test stamina. Your best count for each window length is saved separately on your device."
+    },
+    {
+      "slug": "click-speed-test",
+      "kind": "clickspeed",
+      "group": "click",
+      "durationSec": 5,
+      "nav": "Click speed",
+      "title": "Click Speed Test",
+      "desc": "Test your mouse click speed online. Click as fast as you can for the timed window and get your total clicks plus clicks-per-second (CPS). Free, no signup.",
+      "blurb": "Press Start and click anywhere in the box as fast as you can until time runs out. You get your total clicks and your clicks-per-second, timed precisely. Choose a 1, 5, 10, or 30-second window from the control below.",
+      "tip": "The default 5-second window is the most common benchmark. Your best result for each window length is stored in your browser so you can chase it."
+    },
+    {
+      "slug": "cps-test",
+      "kind": "clickspeed",
+      "group": "click",
+      "durationSec": 5,
+      "nav": "CPS test",
+      "title": "CPS Test",
+      "desc": "CPS test — measure your clicks per second. Click as fast as you can for the timed window and see your CPS score. Free online, no signup, best score saved.",
+      "blurb": "CPS stands for clicks per second. Start the test and click as quickly as you can in the box; when the window ends you get your total clicks and your CPS. Change the window length below to match the benchmark you want.",
+      "tip": "A CPS of 6–8 is solid for ordinary clicking; jitter and butterfly techniques go higher but tire your hand fast. Keep it comfortable."
+    },
+    {
+      "slug": "clicks-per-second",
+      "kind": "clickspeed",
+      "group": "click",
+      "durationSec": 5,
+      "nav": "Clicks per second",
+      "title": "Clicks Per Second Test",
+      "desc": "Measure your clicks per second (CPS) online. Click fast for the timed window to see total clicks and your clicks-per-second rate. Free, no signup.",
+      "blurb": "This is the long way of saying CPS test: click as fast as you can inside the box for the chosen window, and the tool divides your total clicks by the seconds to give your clicks-per-second rate.",
+      "tip": "Try the same window a few times — click speed is streaky, and your best clicks-per-second for each window length is saved on your device."
+    },
+    {
+      "slug": "1-second-click-test",
+      "kind": "clickspeed",
+      "group": "click",
+      "durationSec": 1,
+      "nav": "1-second click",
+      "title": "1 Second Click Test",
+      "desc": "How many times can you click in 1 second? One-second click speed test with total clicks and clicks-per-second. Free online, no signup.",
+      "blurb": "A one-second burst: press Start and click as many times as you can in a single second. It's the shortest, most explosive click test — pure hand speed with no room to pace yourself.",
+      "tip": "One second is over before you know it, so pre-tense your hand and go the instant the counter starts. Your best one-second count is saved locally."
+    },
+    {
+      "slug": "5-second-click-test",
+      "kind": "clickspeed",
+      "group": "click",
+      "durationSec": 5,
+      "nav": "5-second click",
+      "title": "5 Second Click Test",
+      "desc": "How many clicks in 5 seconds? Five-second click speed test with total clicks and clicks-per-second (CPS). Free online, no signup.",
+      "blurb": "The classic five-second click test: press Start and click as fast as you can for five seconds. You get your total clicks and your clicks-per-second — the most widely quoted click-speed benchmark.",
+      "tip": "Five seconds is long enough that pacing matters — start fast but don't burn out at second two. Your best five-second result is stored in your browser."
+    },
+    {
+      "slug": "10-second-click-test",
+      "kind": "clickspeed",
+      "group": "click",
+      "durationSec": 10,
+      "nav": "10-second click",
+      "title": "10 Second Click Test",
+      "desc": "How many clicks in 10 seconds? Ten-second click speed test with total clicks and clicks-per-second (CPS). Free online, no signup, best score saved.",
+      "blurb": "A ten-second endurance run: press Start and keep clicking for a full ten seconds. Longer than the usual five, so it rewards a steady, sustainable rhythm over a single frantic burst.",
+      "tip": "Find a pace you can hold for the whole ten seconds rather than sprinting early. Your best ten-second count is saved on your device."
+    },
+    {
+      "slug": "aim-trainer",
+      "kind": "aim",
+      "group": "aim",
+      "targets": 15,
+      "nav": "Aim trainer",
+      "title": "Aim Trainer",
+      "desc": "Free online aim trainer. Targets pop up one at a time — click each as fast as you can. Get your average time per target over 15 targets. No signup.",
+      "blurb": "Press Start and targets appear one at a time at random spots in the box. Click each one as fast as you can; after 15 targets the trainer reports your average time per target in milliseconds.",
+      "tip": "Move and click in one motion instead of hovering to aim. Lower averages are better, and your fastest average is stored in your browser to beat."
+    }
+  ]
+}
