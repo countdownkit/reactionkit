@@ -134,7 +134,19 @@ for (const t of TESTS) testPage(t);
   const body = `<p class="lead">Quick, honest reflex and speed tests you can play in the browser. Pick one, press start, and see your number — reaction time in milliseconds, clicks per second, or aim accuracy. Every test saves your best score on your device; nothing is uploaded and there's nothing to install.</p>
   ${sections}
   <div class="ad-slot">Advertisement</div>
-  <div class="prose"><p>These are real, self-contained mini-tests, not videos or quizzes: the play area you see on each page is the tool. Timing uses your browser's high-resolution clock, so a reaction-time or clicks-per-second result is measured, not guessed. Take a few goes — reflexes are streaky — and try to beat the best score stored on your device.</p></div>`;
+  <div class="prose"><p>These are real, self-contained mini-tests, not videos or quizzes: the play area you see on each page is the tool. Timing uses your browser's high-resolution clock, so a reaction-time or clicks-per-second result is measured, not guessed. Take a few goes — reflexes are streaky — and try to beat the best score stored on your device.</p></div>
+  <div class="prose">
+    <h2>How the tests work and what a good score is</h2>
+    <p>The reaction time test is the anchor: press start, wait through the red screen, and click the moment it turns green. The gap is measured in milliseconds with your browser's high-resolution timer. Average human visual reaction time is about 200–250 ms, so most people score between 200 and 300 ms once warmed up; under 200 ms is exceptional. Click before green and it reads "Too soon" — a guard against jumping early, not a bug.</p>
+    <p>The click speed tests (CPS, clicks per second) work differently: click as fast as you can for a fixed window, and the tool divides your total clicks by the seconds. A relaxed clicker manages about 3–6 CPS; 6–8 is strong and sustainable; higher usually means jitter or butterfly clicking, which tire the hand fast. You can pick a 1, 5, 10, or 30-second window — 5 seconds is the usual benchmark. The spacebar speed test is the same idea on the space key, and the spacebar counter tallies presses with no time limit.</p>
+    <p>The aim trainer pops up 15 targets one at a time and reports your average time per target in milliseconds; move and click in one motion rather than hovering to aim. Every test saves your best score in your browser (localStorage), separately per window length — nothing is uploaded, and you can come back to beat it. Reflexes are streaky, so warm up first and take several goes; a wired mouse and sitting close to the screen both help.</p>
+    <h2>Frequently asked questions</h2>
+    <p><b>What's a good reaction time?</b> For a simple "click when it turns green" test, 200–250 ms is average and a solid target; consistently under 200 ms is excellent. Most people are not as fast as they assume.</p>
+    <p><b>What is CPS?</b> Clicks per second — your total clicks divided by the seconds you clicked for. For example, 35 clicks in a 5-second window is 7 CPS.</p>
+    <p><b>Why did it say "too soon"?</b> You clicked while the screen was still red, before the green go signal. The reaction test only counts clicks made after it turns green, so it discards the early click and asks you to try again.</p>
+    <p><b>Are my scores saved or shared?</b> Your best score lives only in this browser on this device, in localStorage. Nothing is uploaded to a server, and pressing "Clear best" (or clearing your browser data) removes it.</p>
+    <p><b>Why is my reaction time slower than I expected?</b> Screen refresh rate, a wireless mouse or trackpad, and tiredness each add milliseconds that have nothing to do with your reflexes. A wired mouse and a few warm-up rounds usually bring the number down.</p>
+  </div>`;
   writePage(`/`, layout({ title, desc, urlPath: `/`, h1: `Reaction & Speed Tests`, body }));
 }
 
